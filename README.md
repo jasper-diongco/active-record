@@ -8,7 +8,7 @@ Student Class
 
 ```php
     <?php
-	class Student extends DatabaseObject {
+	class Student extends DatabaseObject { 
 
 	    protected static $table_name = 'students';
 	    protected static $attributes = ['first_name','last_name', 'course'];
