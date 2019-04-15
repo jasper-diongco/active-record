@@ -1,9 +1,9 @@
-###This is my simple implementation of Active Record pattern in PHP
+### This is my simple implementation of Active Record pattern in PHP
 
 - This will work only if your db is mysql
 - import the active_record_db.sql in your mysql server
 
-###set up the classes
+### set up the classes
 Student Class
 
     <?php
@@ -35,7 +35,7 @@ Course Class
         public $department;
 	}
 
-###how to insert a record in students table
+### how to insert a record in students table
 	<?php
 		require_once 'initialize.php';
 
@@ -51,7 +51,7 @@ Course Class
 
 		echo json_encode($student->toAssoc());
 
-###how to update a record in students table
+### how to update a record in students table
 	<?php
 		require_once 'initialize.php';
 
@@ -69,7 +69,7 @@ Course Class
 
 		echo json_encode($student->toAssoc());
 
-###how to select a record in students table
+### how to select a record in students table
 
 	<?php
 		require_once 'initialize.php';
@@ -80,7 +80,7 @@ Course Class
 
 		echo json_encode($student->toAssoc());
 
-###how to select all records in students table
+### how to select all records in students table
 	<?php
 		require_once 'initialize.php';
 
@@ -90,7 +90,7 @@ Course Class
 		//transform the list of object into JSON string
 		echo Student::toJSON($students);
 
-###how to insert a record in course table
+### how to insert a record in course table
 	<?php
 		require_once 'initialize.php';
 
