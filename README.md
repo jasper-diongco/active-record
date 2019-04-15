@@ -6,6 +6,7 @@
 ### set up the classes
 Student Class
 
+```php
     <?php
 	class Student extends DatabaseObject {
 
@@ -20,6 +21,7 @@ Student Class
 	public $last_name;
 	public $course;
     }
+```
 
 Course Class
 
