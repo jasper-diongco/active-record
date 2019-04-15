@@ -1,6 +1,6 @@
 ### This is my simple implementation of Active Record pattern in PHP
 
-- This will work only if your db is mysql
+- This will only work if your db is mysql
 - import the active_record_db.sql in your mysql server
 
 ### set up the classes
