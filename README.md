@@ -25,17 +25,19 @@ Student Class
 
 Course Class
 
+```php
 	<?php
-		class Course extends DatabaseObject {
+	class Course extends DatabaseObject {
 		protected static $table_name = 'courses';
 		protected static $attributes = ['name','department'];
-        protected static $primary_key = 'course_id';
-        protected static $auto_increment = false;
+		protected static $primary_key = 'course_id';
+		protected static $auto_increment = false;
 
-        public $course_id;
-        public $name;
-        public $department;
+		public $course_id;
+		public $name;
+		public $department;
 	}
+```
 
 ### how to insert a record in students table
 	<?php
