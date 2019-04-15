@@ -10,16 +10,16 @@ Student Class
     <?php
 	class Student extends DatabaseObject {
 
-	protected static $table_name = 'students';
-	protected static $attributes = ['first_name','last_name', 'course'];
+	    protected static $table_name = 'students';
+	    protected static $attributes = ['first_name','last_name', 'course'];
         protected static $primary_key = 'id';
         protected static $auto_increment = true;
 
         //properties of the class
-	public $id;
-	public $first_name;
-	public $last_name;
-	public $course;
+		public $id;
+		public $first_name;
+		public $last_name;
+		public $course;
     }
 ```
 
@@ -40,6 +40,7 @@ Course Class
 ```
 
 ### how to insert a record in students table
+```php
 	<?php
 		require_once 'initialize.php';
 
@@ -54,8 +55,10 @@ Course Class
 		//$student->create();
 
 		echo json_encode($student->toAssoc());
+```
 
 ### how to update a record in students table
+```php
 	<?php
 		require_once 'initialize.php';
 
@@ -72,9 +75,10 @@ Course Class
 		//$student->update();
 
 		echo json_encode($student->toAssoc());
+```
 
 ### how to select a record in students table
-
+```php
 	<?php
 		require_once 'initialize.php';
 
@@ -83,8 +87,9 @@ Course Class
 		$student = Student::findById(2);
 
 		echo json_encode($student->toAssoc());
-
+```
 ### how to select all records in students table
+```php
 	<?php
 		require_once 'initialize.php';
 
@@ -93,8 +98,9 @@ Course Class
 
 		//transform the list of object into JSON string
 		echo Student::toJSON($students);
-
+```
 ### how to insert a record in course table
+```php
 	<?php
 		require_once 'initialize.php';
 
@@ -106,4 +112,5 @@ Course Class
 
 		$course->create();
 
-		echo json_encode($course->toAssoc());``
+		echo json_encode($course->toAssoc());
+```
