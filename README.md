@@ -6,15 +6,15 @@
 ### set up the classes
 Student Class
 
-<?php
-	class Student extends DatabaseObject {
+    <?php
+		class Student extends DatabaseObject {
 
 		protected static $table_name = 'students';
 		protected static $attributes = ['first_name','last_name', 'course'];
-		protected static $primary_key = 'id';
-		protected static $auto_increment = true;
+        protected static $primary_key = 'id';
+        protected static $auto_increment = true;
 
-		//properties of the class
+        //properties of the class
 		public $id;
 		public $first_name;
 		public $last_name;
@@ -24,9 +24,9 @@ Student Class
 Course Class
 
 	<?php
-	class Course extends DatabaseObject {
-	protected static $table_name = 'courses';
-	protected static $attributes = ['name','department'];
+		class Course extends DatabaseObject {
+		protected static $table_name = 'courses';
+		protected static $attributes = ['name','department'];
         protected static $primary_key = 'course_id';
         protected static $auto_increment = false;
 
@@ -102,4 +102,4 @@ Course Class
 
 		$course->create();
 
-		echo json_encode($course->toAssoc());
+		echo json_encode($course->toAssoc());``
